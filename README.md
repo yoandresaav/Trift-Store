@@ -1,6 +1,7 @@
 
 ## Requirements:
 1. Elaborate on the architectural design to accomplish the proposed solution.
+![image](Project.jpg)
 
 2. Detail how you intend to augment the existing backend to incorporate e-signature capabilities.
 
