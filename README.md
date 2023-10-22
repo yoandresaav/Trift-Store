@@ -33,7 +33,8 @@ In my solution, a manager use django admin to save the CSV file. Django admin vi
 In my experiencie the fast, more secure and not cheaper solution is implement a third part service like I said before. But each project is diferent. In one project one startup ask me to renderize the html with the same design as a pdf, and a little canvas in the bottom center with the posibilite to draw there. I send the draw to the backend and generate a pdf and the customer press a ok button. In my opinion was the approach that they need. 
 
 6. Identify the specific technologies or libraries best suited for implementing e-signature and SMS features.
-I have worked with Docusign and Twilio. 
+
+In my opinion Docusign(e-signature) and Twilio (sms).  They have python packages and work well with Django and Celery. I have worked with both and never got problems.
 
 7. Discuss the security protocols and considerations to be instituted.
 - In Django uses .env files with keys values.
