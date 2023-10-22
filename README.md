@@ -47,8 +47,8 @@ I have worked with Docusign and Twilio.
 - Protect aws or google permission IAM
 
 8. Develop a contingency plan for error-handling across various stages of the operation.
-- In Django first enable MAIL_ADMIN and logging
-- Im not sure about Vue, but in React I have implemented a catch over the error page in react-router and notificate the backend with each error.
+- In Django first enable MAIL_ADMIN and logging. Every day review log and email.
+- Im not sure about Vue, but in React I have implemented a catch over the error page in react-router and notificate the backend with each error. Is simple but work fine, and notificate with a email.
 - In Django implement @transaction.atomic to rollback database operation through diferents stages when errors happens.
 
 9. Enumerate the testing methodologies to ensure system reliability and performance.
@@ -59,6 +59,16 @@ I have worked with Docusign and Twilio.
 - If the solution become big, you can implement smoke test to reduce the time testing (due the fact they verify some important functions before continue)
 - For me is important implement algoritms with good BigO timing, check the quality of the code and messure the Django hits the database using tools like Django Debug Toolbar.
 
+## Bonus:
+1. Provide a scalable design to manage high-throughput scenarios involving multiple CSV file uploads and SMS triggers.
 
+In a monorepo architech, for manage a high-throughput scenario, I would like to add celery to the solution and add more capacitys RAM and microprocessor to the server. If the number of hits at the same time is more than 10 000, I recommend create a service apart for handle csv and sms and use Kubernetes to handle multiples services.
+
+2. Recommend any auxiliary features or system enhancements for an improved customer experience.
+- I added an extra step, generate a pdf and give the opportunity to accept. The pdf could be printed by the customer.
+- Notificate also via email.
+- With the saved image, the system could skip the part of signing and only show a generated pdf to be accepeted or add a new sign.
+- Send a link of the sign page in sms.
+- Allow sign usign smart phone.
 
 
